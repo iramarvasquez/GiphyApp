@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 import { GifsComponent } from './gifs/gifs.component';
 import { SearchComponent } from './search/search.component';
 
 const routes: Routes = [
-  { path: '', component: SearchComponent },
-	{ path: 'Busqueda/:q', component: GifsComponent }
+	{ path: '', component: SearchComponent },
+	{ path: 'results/:pics', component: GifsComponent }
 ];
 
 @NgModule({

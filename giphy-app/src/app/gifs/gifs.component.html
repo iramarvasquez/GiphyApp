@@ -1,1 +1,14 @@
-<p>gifs works!</p>
+<div class="s006">
+  <form>
+    <fieldset>
+      <legend>Results</legend>
+      <div class="inner-form">
+        <div class="boxsearch">
+          <button class="suggestion-wrap" type="button" onclick="javascript:location.href='/'"><span>New
+              Search</span></button>
+        </div>
+      </div>
+      <img *ngFor="let i of gifs.data" [src]="i.images.fixed_width.url">
+    </fieldset>
+  </form>
+</div>

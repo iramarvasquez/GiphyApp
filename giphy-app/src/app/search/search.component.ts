@@ -8,8 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class SearchComponent implements OnInit {
 
   constructor() { }
+  nome!: string;
 
   ngOnInit(): void {
+  }
+
+  search(form: any) {
+    location.href = `/results/${form.value.nome}`;
   }
 
 }
